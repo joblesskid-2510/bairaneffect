@@ -45,7 +45,7 @@ function generateRequestId() {
 }
 
 async function uploadToStoreFile(filePath, userId) {
-  const url = process.env.PORT;
+  const url = process.env.STORAGE_URL;
   
   return new Promise((resolve, reject) => {
     const form = new FormData();
